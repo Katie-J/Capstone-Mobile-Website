@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+     <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>UAFS Mobile Website</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/LionTiny.png" type="image/x-icon" />
+    <link rel="Lion icon" href="images/Lion.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="host_version"> 
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header tit-up">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Login</h4>
+			</div>
+			<div class="modal-body student-box">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+					<li><a class="active" href="#StudentLogin" data-toggle="tab">Student Login</a></li>
+					<li><a href="#StaffLogin" data-toggle="tab">UAFS Staff Login</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="StudentLogin">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="studentEmail" placeholder="Email" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="studentPassword" placeholder="Password" type="email">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+										Submit
+									</button>
+									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane" id="StaffLogin">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="staffName" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="staffEmail" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="staffPassword" placeholder="Password" type="password">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+										Submit
+									</button>
+									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+     <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+    <!-- END LOADER -->	
+
+   <!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/Logo.png" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+					<li class="nav-item active"><a class="nav-link" href="teachers.html">Teachers</a></li>
+					<li class="nav-item"><a class="nav-link" href="tuition.html">Tuition</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log orange" href="#" data-toggle="modal" data-target="#login"><span>Log In</span></a></li>
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+
+	<div class="teachers-title-box">
+		<div class="container text-center">
+			<h1>Teachers<span class="m_1"></span></h1>
+		</div>
+	</div>
+	
+
+<div id="overviews" class="section wb">
+        <div class="container">
+            <div class="row"> 
+		<div class="blog-teachers">
+					<h4>Applied Science and Technology</h4>
+					<div id="blog-teachers">
+						<ul class="teachers-list">
+							<li class="teacher">
+								<div class="avatar"><img alt="" src="images/teacher.jpg" class="avatar"></div>
+								<div class="teacher-container">
+									<h5 class="teacher-author"><a href="#">Mrs Lindsey Mott</a></h5>
+									<div class="teacher-meta">
+										<a href="#" class="teacher-date link-style1">Lindsey.Mott@uafs.edu</a>
+										<a class="teacher-reply-link link-style3" href="#respond">Class Schedules »</a>
+									</div>
+									<div class="teacher-body">
+										<p>Instructor. Office hours Monday/Wenesday 2pm-3pm in Flanders room 205.</p>
+									</div>
+								</div>
+							</li>
+							<li class="teacher">
+								<div class="avatar"><img alt="" src="images/teacher.jpg" class="avatar"></div>
+								<div class="teacher-container">
+									<h5 class="teacher-author"><a href="#">Mr Cameron McKinney</a></h5>
+									<div class="teacher-meta">
+										<a href="#" class="teacher-date link-style1">Cameron.McKinney@uafs.edu
+</a>
+										<a class="teacher-reply-link link-style3" href="#respond">Class Schedules »</a>
+									</div>
+									<div class="teacher-body">
+										<p>Senior Instructor. Office hours Monday 1pm-5pm Flanders room 203</p>
+									</div>
+								</div>
+								<ul class="children">
+									<li class="teacher">
+										<div class="avatar"><img alt="" src="images/teacher.jpg" class="avatar"></div>
+										<div class="teacher-container">
+											<h5 class="teacher-author"><a href="#">Mathew Thomas</a></h5>
+											<div class="teacher-meta"><a href="#" class="teacher-date link-style1">Mathew.Thomas@uafs.edu</a><a class="teacher-reply-link link-style3" href="#respond">Contact »</a></div>
+											<div class="teacher-body">
+												<p>Applied Science and Technology Tutor. Tutors Networking 1 & 2, Advance Algorithms, and Operating Systems.</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<h4>Business</h4>
+					<div id="blog-teachers">
+						<ul class="teachers-list">
+							<li class="teacher">
+								<div class="avatar"><img alt="" src="images/teacher.jpg" class="avatar"></div>
+								<div class="teacher-container">
+									<h5 class="teacher-author"><a href="#">Name of Instructor</a></h5>
+									<div class="teacher-meta">
+										<a href="#" class="teacher-date link-style1">Email Here</a>
+										<a class="teacher-reply-link link-style3" href="#respond">Class Schedules »</a>
+									</div>
+									<div class="teacher-body">
+										<p>Any info regarding the teacher or tutor im ganna put here</p>
+									</div>
+								</div>
+							</li>
+							<li class="teacher">
+								<div class="avatar"><img alt="" src="images/teacher.jpg" class="avatar"></div>
+								<div class="teacher-container">
+									<h5 class="teacher-author"><a href="#">Name of Instructor</a></h5>
+									<div class="teacher-meta">
+										<a href="#" class="teacher-date link-style1">Email Here</a>
+										<a class="teacher-reply-link link-style3" href="#respond">Class Schedules »</a>
+									</div>
+									<div class="teacher-body">
+										<p>Any info regarding the teacher or tutor im ganna put here</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<h4>Communication, Languages, Arts, & Social Sciences</h4>
+<div id="blog-teachers">
+						<ul class="teachers-list">
+							<li class="teacher">
+								<div class="avatar"><img alt="" src="images/teacher.jpg" class="avatar"></div>
+								<div class="teacher-container">
+									<h5 class="teacher-author"><a href="#">Name of Instructor</a></h5>
+									<div class="teacher-meta">
+										<a href="#" class="teacher-date link-style1">Email Here</a>
+										<a class="teacher-reply-link link-style3" href="#respond">Class Schedules »</a>
+									</div>
+									<div class="teacher-body">
+										<p>Any info regarding the teacher or tutor im ganna put here</p>
+									</div>
+								</div>
+							</li>
+							<li class="teacher">
+								<div class="avatar"><img alt="" src="images/teacher.jpg" class="avatar"></div>
+								<div class="teacher-container">
+									<h5 class="teacher-author"><a href="#">Name of Instructor</a></h5>
+									<div class="teacher-meta">
+										<a href="#" class="teacher-date link-style1">Email Here</a>
+										<a class="teacher-reply-link link-style3" href="#respond">Class Schedules »</a>
+									</div>
+									<div class="teacher-body">
+										<p>Any info regarding the teacher or tutor im ganna put here</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<h4>Health Sciences</h4>
+<div id="blog-teachers">
+						<ul class="teachers-list">
+							<li class="teacher">
+								<div class="avatar"><img alt="" src="images/teacher.jpg" class="avatar"></div>
+								<div class="teacher-container">
+									<h5 class="teacher-author"><a href="#">Name of Instructor</a></h5>
+									<div class="teacher-meta">
+										<a href="#" class="teacher-date link-style1">Email Here</a>
+										<a class="teacher-reply-link link-style3" href="#respond">Class Schedules »</a>
+									</div>
+									<div class="teacher-body">
+										<p>Any info regarding the teacher or tutor im ganna put here</p>
+									</div>
+								</div>
+							</li>
+							<li class="teacher">
+								<div class="avatar"><img alt="" src="images/teacher.jpg" class="avatar"></div>
+								<div class="teacher-container">
+									<h5 class="teacher-author"><a href="#">Name of Instructor</a></h5>
+									<div class="teacher-meta">
+										<a href="#" class="teacher-date link-style1">Email Here</a>
+										<a class="teacher-reply-link link-style3" href="#respond">Class Schedules »</a>
+									</div>
+									<div class="teacher-body">
+										<p>Any info regarding the teacher or tutor im ganna put here</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<h4>Science, Technology, Enginnering, & Mathematics</h4>
+<div id="blog-teachers">
+						<ul class="teachers-list">
+							<li class="teacher">
+								<div class="avatar"><img alt="" src="images/teacher.jpg" class="avatar"></div>
+								<div class="teacher-container">
+									<h5 class="teacher-author"><a href="#">Name of Instructor</a></h5>
+									<div class="teacher-meta">
+										<a href="#" class="teacher-date link-style1">Email Here</a>
+										<a class="teacher-reply-link link-style3" href="#respond">Class Schedules »</a>
+									</div>
+									<div class="teacher-body">
+										<p>Any info regarding the teacher or tutor im ganna put here</p>
+									</div>
+								</div>
+							</li>
+							<li class="teacher">
+								<div class="avatar"><img alt="" src="images/teacher.jpg" class="avatar"></div>
+								<div class="teacher-container">
+									<h5 class="teacher-author"><a href="#">Name of Instructor</a></h5>
+									<div class="teacher-meta">
+										<a href="#" class="teacher-date link-style1">Email Here</a>
+										<a class="teacher-reply-link link-style3" href="#respond">Class Schedules »</a>
+									</div>
+									<div class="teacher-body">
+										<p>Any info regarding the teacher or tutor im ganna put here</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<h4>Education</h4>
+<div id="blog-teachers">
+						<ul class="teachers-list">
+							<li class="teacher">
+								<div class="avatar"><img alt="" src="images/teacher.jpg" class="avatar"></div>
+								<div class="teacher-container">
+									<h5 class="teacher-author"><a href="#">Name of Instructor</a></h5>
+									<div class="teacher-meta">
+										<a href="#" class="teacher-date link-style1">Email Here</a>
+										<a class="teacher-reply-link link-style3" href="#respond">Class Schedules »</a>
+									</div>
+									<div class="teacher-body">
+										<p>Any info regarding the teacher or tutor im ganna put here</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+	</div>
+</div>
+			
+
+      <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>School Code: 001110</h3>
+                        </div>
+                        <p> The majority of our communication will take place via this website, your online account, and your UAFS email account.  Please ensure that you regularly check your email for important information from our office.</p>   
+						<div class="footer-right">
+							<ul class="footer-links-soi">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-github"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul><!-- end links -->
+						</div>						
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+				<div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Information Link</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./courses.html">Courses</a></li>
+			    <li><a href="#">About</a></li>
+			    <li><a href="#">Contact</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li>5210 Grand Ave. P.O. Box 3649</li>
+                            <li>Fort Smith, Arkansas 72913-3649</li>
+                            <li>479-788-700</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">                   
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2020 UAFS Design By : <a href="#">TheOutOfBoundsExceptions</a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>

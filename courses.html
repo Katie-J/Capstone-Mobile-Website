@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>UAFS Mobile Website</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/LionTiny.png" type="image/x-icon" />
+    <link rel="Lion icon" href="images/Lion.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="host_version"> 
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header tit-up">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Login</h4>
+			</div>
+			<div class="modal-body student-box">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+					<li><a class="active" href="#StudentLogin" data-toggle="tab">Student Login</a></li>
+					<li><a href="#StaffLogin" data-toggle="tab">UAFS Staff Login</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="StudentLogin">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="studentEmail" placeholder="Email" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="studentPassword" placeholder="Password" type="email">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+										Submit
+									</button>
+									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane" id="StaffLogin">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="staffName" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="staffEmail" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="staffPassword" placeholder="Password" type="password">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+										Submit
+									</button>
+									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+    <!-- END LOADER -->	
+
+    <!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/Logo.png" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+					<li class="nav-item active"><a class="nav-link" href="courses.html">Courses</a></li>
+					<li class="nav-item"><a class="nav-link" href="teachers.html">Teachers</a></li>
+					<li class="nav-item"><a class="nav-link" href="tuition.html">Tuition</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log orange" href="#" data-toggle="modal" data-target="#login"><span>Log In</span></a></li>
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<div class="courses-title-box">
+		<div class="container text-center">
+			<h1>Degrees Available<span class="m_1"></span></h1>
+		</div>
+	</div>
+	
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <p class="lead">UAFS offers bachelor's degrees, associate of arts degrees, associate of general studies, associate of applied science degrees, certificates of proficiency, technical certificates and more.</p>
+                </div>
+            </div><!-- end title -->
+
+            <hr class="invis"> 
+
+            <div class="row"> 
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/degree1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Engineering</a></h2>
+				                    			</div>
+							<div class="course-desc">
+								<p>Provides a comprehensive engineering education with a focus on the design of mechanical and thermal systems.... </p>
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 4 Years</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 56 Students</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 7</li>
+							</ul>
+						</div>
+					</div>
+                </div><!-- end col -->
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/degree2.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Computer Science</a></h2>
+							</div>
+							<div class="blog-desc">
+								<p>Programmers translate business problems into codes a computer can understand. Customer requirements are specified programs written.... </p>
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 4 Years</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 262 Students</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 0</li>
+							</ul>
+						</div>
+					</div>
+                </div><!-- end col -->	
+				
+				<div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/degree3.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Accounting</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>Accountants record and analyze financial information for individuals, corporations, nonprofits, and governments.  They provide a range of..... </p>
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 2 Years</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 500 Students</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 20</li>
+							</ul>
+						</div>
+					</div>
+                </div><!-- end col -->
+				
+				<div class="col-lg-3 col-md-6 col-12">
+                   <div class="course-item">
+						<div class="image-blog">
+							<img src="images/degree4.jpeg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Medical Sciences</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>Medical science covers many subjects which try to explain how the human body works. Starting with basic biology it is generally divided.... </p>
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Years</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 364 Students</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 50</li>
+							</ul>
+						</div>
+					</div>
+                </div><!-- end col -->
+            </div><!-- end row -->			
+			
+			<hr class="hr3"> 
+			
+            <div class="row"> 
+				<div class="col-lg-3 col-md-6 col-12">
+                   <div class="course-item">
+						<div class="image-blog">
+							<img src="images/degree5.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Biology</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>provides training for success in various fields of biology, including medicine, industry, and field related work. The degree is designed to prepare graduates..... </p>
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 4 Years</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 120 Students</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 12</li>
+							</ul>
+						</div>
+					</div>
+                </div><!-- end col -->
+				
+				<div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/degree7.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Education</a></h2>
+							</div>
+							<div class="blog-desc">
+								<p>with an emphasis in both teaching skills and core knowledge, features faculty with extensive public school experience and significant.... </p>
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 4 Years</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 230 Students</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 28</li>
+							</ul>
+						</div>
+					</div>
+                </div><!-- end col -->
+				
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/degree6.jpg" alt="" class="img-fluid">
+						</div>		
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Creative Writing</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>The College of Communication is dedicated to the ideals of effective communication through language, literature, speech, rhetoric and writing.... </p>
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 2 Years</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 3</li>
+							</ul>
+						</div>
+					</div>
+                </div><!-- end col -->
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/degree8.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">General Studies</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>Making a decision about your field of study and career is an important. Allowing students the flexibility to tailor to their individual needs and interests.... </p>
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 4 Years</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 500 Students</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 37</li>
+							</ul>
+						</div>
+					</div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div class="parallax section dbcolor">
+        <div class="container">
+            
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>School Code: 001110</h3>
+                        </div>
+                        <p> The majority of our communication will take place via this website, your online account, and your UAFS email account.  Please ensure that you regularly check your email for important information from our office.</p>   
+						<div class="footer-right">
+							<ul class="footer-links-soi">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-github"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul><!-- end links -->
+						</div>						
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+				<div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Information Link</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./courses.html">Courses</a></li>
+			    <li><a href="#">About</a></li>
+			    <li><a href="#">Contact</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li>5210 Grand Ave. P.O. Box 3649</li>
+                            <li>Fort Smith, Arkansas 72913-3649</li>
+                            <li>479-788-700</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">                   
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2020 UAFS Design By : <a href="#">TheOutOfBoundsExceptions</a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    </script>
+</body>
+</html>
